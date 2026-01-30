@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">AdvanceUINavApp</string>
+
+    <!-- Navigation Labels -->
+    <string name="nav_home">Home</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Home Fragment -->
+    <string name="home_title">Welcome to Home</string>
+    <string name="home_description">This is the Home Fragment demonstrating the Navigation Component with BottomNavigationView. You can navigate between Home, Profile, and Settings using the bottom navigation menu.</string>
+    <string name="home_image_description">Home Fragment Image</string>
+
+    <!-- Profile Fragment -->
+    <string name="profile_title">User Profile</string>
+
+    <!-- Info Fragment (nested in Profile) -->
+    <string name="info_title">Profile Information</string>
+    <string name="info_content">This is the Info tab inside the Profile Fragment. It demonstrates nested navigation using ViewPager2 and TabLayout. The InfoFragment and GalleryFragment are child fragments managed by a FragmentStateAdapter (ProfilePagerAdapter).</string>
+
+    <!-- Gallery Fragment (nested in Profile) -->
+    <string name="gallery_title">Photo Gallery</string>
+    <string name="gallery_content">This is the Gallery tab inside the Profile Fragment. ViewPager2 allows smooth swiping between these nested fragments, while TabLayoutMediator automatically syncs the TabLayout with the ViewPager2.</string>
+
+    <!-- Settings Fragment -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_description">This is the Settings Fragment. All three top-level fragments (Home, Profile, Settings) are managed by a single NavHostFragment using the Navigation Component architecture.</string>
+</resources>

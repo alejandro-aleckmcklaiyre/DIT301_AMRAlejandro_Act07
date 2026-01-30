@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+    Adaptive Layout for Tablets/Large Screens (sw600dp and above)
+    
+    This layout demonstrates adaptive design by:
+    1. Using a wider layout with two columns
+    2. Placing image on the right side for better use of screen real estate
+    3. Adjusting text sizes and spacing for larger screens
+    4. Using better visual hierarchy on wide displays
+-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/home_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:text="@string/home_title"
+        android:textAppearance="?attr/textAppearanceHeadline3"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/home_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/home_description"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="32dp"
+        android:text="@string/home_description"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/home_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_title" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/home_image"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_margin="32dp"
+        android:contentDescription="@string/home_image_description"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
